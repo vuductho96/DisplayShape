@@ -9,7 +9,7 @@ namespace MenuExample
             int choice;
             do
             {
-              
+
                 Console.WriteLine("|              MENU OPTIONS                  |");
                 Console.WriteLine("=============================================");
                 Console.WriteLine("| 1. Print Rectangle                         |");
@@ -23,11 +23,11 @@ namespace MenuExample
                 switch (choice)
                 {
                     case 1:
-                       
+
 
                         for (int i = 0; i < 3; i++)
                         {
-                            for (int j = 0; j <7; j++)
+                            for (int j = 0; j < 7; j++)
                             {
                                 Console.Write("*");
                             }
@@ -35,7 +35,7 @@ namespace MenuExample
                         }
                         break;
                     case 2:
-                       
+
 
                         for (int i = 1; i <= 5; i++)
                         {
@@ -47,20 +47,20 @@ namespace MenuExample
                         }
                         break;
                     case 3:
-                       
 
-                        for (int i = 7; i >=1; i--)
+                        for (int i = 1; i <= 7; i++)
                         {
-                            for (int j = 0; j <=i ; j++)
+                            for (int j = 1; j <= 7 - i; j++)
                             {
                                 Console.Write(" ");
                             }
-                            for (int k = 0; k < 2 * i + 1; k++)
+                            for (int k = 1; k <= i; k++)
                             {
-                                Console.Write("*");
+                                Console.Write("* ");
                             }
                             Console.WriteLine();
                         }
+
                         break;
                     case 4:
                         Console.WriteLine("Exiting program...");
