@@ -23,14 +23,11 @@ namespace MenuExample
                 switch (choice)
                 {
                     case 1:
-                        Console.Write("Enter the width of the rectangle: ");
-                        int width = int.Parse(Console.ReadLine());
-                        Console.Write("Enter the height of the rectangle: ");
-                        int height = int.Parse(Console.ReadLine());
+                       
 
-                        for (int i = 0; i < height; i++)
+                        for (int i = 0; i < 3; i++)
                         {
-                            for (int j = 0; j < width; j++)
+                            for (int j = 0; j <7; j++)
                             {
                                 Console.Write("*");
                             }
@@ -38,12 +35,11 @@ namespace MenuExample
                         }
                         break;
                     case 2:
-                        Console.Write("Enter the size of the triangle: ");
-                        int size = int.Parse(Console.ReadLine());
+                       
 
-                        for (int i = 0; i < size; i++)
+                        for (int i = 1; i <= 5; i++)
                         {
-                            for (int j = 0; j <= i; j++)
+                            for (int j = 1; j <= i; j++)
                             {
                                 Console.Write("*");
                             }
@@ -51,12 +47,11 @@ namespace MenuExample
                         }
                         break;
                     case 3:
-                        Console.Write("Enter the height of the triangle: ");
-                        int triangleHeight = int.Parse(Console.ReadLine());
+                       
 
-                        for (int i = 0; i < triangleHeight; i++)
+                        for (int i = 7; i >=1; i--)
                         {
-                            for (int j = 0; j < triangleHeight - i; j++)
+                            for (int j = 0; j <=i ; j++)
                             {
                                 Console.Write(" ");
                             }
